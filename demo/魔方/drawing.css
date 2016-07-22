@@ -1,0 +1,121 @@
+#view {
+    width: 300px;
+    height: 300px;
+    margin: 80px auto 0 auto;
+}
+
+.box {
+    position: relative;
+    -webkit-animation: animation 5s ease infinite;
+    -webkit-animation-duration: 30s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 150px 150px 0;
+}
+
+.box>div {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    font-size: 130px;
+    text-align: center;
+}
+/*第一个面的位置*/
+.first {
+    -webkit-transform: translateZ(150px);
+}
+/*第二个面的位置*/
+
+.second {
+    -webkit-transform: rotatey(90deg) translatez(150px);
+}
+/*第三个面的位置*/
+
+.third {
+    -webkit-transform: rotatex(90deg) translatez(-150px);
+}
+/*第四个面的位置*/
+
+.forth {
+    -webkit-transform: rotatex(90deg) translatez(150px);
+}
+/*第五个面的位置*/
+
+.fifth {
+    -webkit-transform: rotatey(90deg) translatez(-150px);
+}
+/*第六个面的位置*/
+
+.sixth {
+    -webkit-transform: translateZ(-150px);
+}
+
+/*动画*/
+@-webkit-keyframes animation {
+    from,
+    to {}
+    16% {
+        -webkit-transform: rotateY(-90deg);
+    }
+    33% {
+        -webkit-transform: rotatey(-90deg) rotatez(135deg);
+    }
+    50% {
+        -webkit-transform: rotatey(225deg) rotatez(135deg);
+    }
+    66% {
+        -webkit-transform: rotatey(135deg) rotatex(135deg);
+    }
+    83% {
+        -webkit-transform: rotatex(135deg);
+    }
+}
+
+.draw {
+    width: 300px;
+    height: 300px;
+    display: -webkit-flex;
+    -webkit-flex-flow: column;
+    background-color: transparent;
+}
+
+.draw div {
+    display: -webkit-flex;
+    -webkit-flex: 1;
+    -webkit-flex-flow: row;
+    background-color: transparent;
+}
+
+.draw div div {
+    box-shadow: 0 0 1px #FFF;
+    border-radius: 10px;
+    -webkit-flex: 1;
+}
+/*第一个面的颜色*/
+.a div div {
+    background-color: rgba(233, 150, 122, 0.8);
+}
+/*第二个面的颜色*/
+
+.b div div {
+    background-color: rgba(160, 82, 45, 0.8);
+}
+/*第三个面的颜色*/
+
+.c div div {
+    background-color: rgba(0, 191, 255, 0.8);
+}
+/*第四个面的颜色*/
+
+.d div div {
+    background-color: rgba(221, 160, 221, 0.8);
+}
+/*第五个面的颜色*/
+
+.e div div {
+    background-color: rgba(124, 252, 0, 0.8);
+}
+/*第六个面的颜色*/
+
+.f div div {
+    background-color: rgba(255, 215, 0, );
+}

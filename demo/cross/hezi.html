@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型和弹性模型</title>
+    <style type="text/css" media="screen">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .xiezi {
+        width: 100px;
+        height: 100px;
+        background-color: #FF7F50;
+        overflow: scroll;
+    }
+    
+    .xiehe {
+        padding: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: #00FFFF;
+        margin: 100px;
+        border: 5px solid red;
+    }
+    
+    .xiezi1 {
+        width: 100px;
+        height: 100px;
+        background-color: #FF7F50;
+    }
+    
+    .xiehe1 {
+        padding: 10px;
+        width: 130px;
+        height: 130px;
+        box-sizing: border-box;
+        background-color: #00FFFF;
+        margin: 100px;
+        border: 5px solid red;
+    }
+    
+    .col {
+        -webkit-column-count: 3;
+        -webkit-column-rule-style: dotted;
+        -webkit-column-gap: 14px;
+    }
+    
+    .center {
+        width: 300px;
+        height: 300px;
+        background-color: #FF7F50;
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+    }
+    
+    .new {
+        background-color:#E0FFFF;
+        display: -webkit-flex;
+        -webkit-flex-direction: column;
+    }
+    .old{
+         background-color:#E0FFFF;
+        display: -webkit-box;
+        height:600px;
+        -webkit-box-orient: vertical;
+    }
+    .first {
+        -webkit-flex: 1;
+        height: 100px;
+        -webkit-order: 2;
+        background-color: #FF7F50;
+    }
+    
+    #second {
+        -webkit-flex: 1;
+        height: 100px;
+        -webkit-order: 3;
+        background-color: #90EE90;
+    }
+    
+    #third {
+        -webkit-flex: 1;
+        height: 300px;
+        -webkit-order: 1;
+        background-color: #87CEFA;
+    }
+        .firsto {
+        -webkit-box-flex: 1;
+        height: 100px;
+        background-color: #FF7F50;
+    }
+    
+    #secondo {
+        -webkit-box-flex: 1;
+        height: 100px;
+        background-color: #90EE90;
+    }
+    
+    #thirdo {
+        -webkit-box-flex: 1;
+        height: 300px;
+        background-color: #87CEFA;
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <p>标准盒模型</p>
+    <div class="xiehe">
+        <div class="xiezi">
+            鞋子
+        </div>
+    </div>
+    <hr/>
+    <p>怪异盒模型</p>
+    <div class="xiehe1">
+        <div class="xiezi1">
+            怪异鞋子
+        </div>
+    </div>
+    <hr/>
+    <p>分栏</p>
+    <div class="col">
+        <img src="ww.jpg" alt="" width="150px"> 新浪体育讯　　5月24日，亚冠联赛打响16强淘汰赛的第二回合比赛，上海上港队主场1-0击败日本东京FC队，以客场进球多的优势挺进亚冠八强。远在悉尼的山东鲁能队也一直通过网络关注着本场比赛的进展，鲁能高层一直坚信上港一定能够赢球，并且表示只要参加亚冠的球队都是代表中国足球为国争光。对于鲁能来说，明天这场比赛只有一个字：拼。 　　山东鲁能队的战前最后一练安排在当地时间晚上7点半，训练结束全队用过晚餐之后刚好上港队的比赛开始。在比赛刚一开始，鲁能俱乐部总经理孙华就给出自己的预测：这场比赛上港队一定能赢，比分有可能是2-0。 　　比赛的进程打得非常焦灼，直到下半时上港队也未能破得门。对此几位观战的鲁能高层也表示：上港只要按照这个节奏打下去一定能够进球。直到比赛来到下半时第43分钟的时候，不少人都对上港有些失去信心的时候，鲁能总经理孙华仍然表示：比赛还没有结束，上港肯定还有机会。
+    </div>
+    <hr/>
+    <p>垂直居中水平居中</p>
+    <div class="center">
+        <img src="asd.jpg" alt="">
+    </div>
+    <hr/>
+    <p>弹性盒模型(新)+排序</p>
+    <div class="new">
+        <div class="first">第一个</div>
+        <div id="second">第二个</div>
+        <div id="third">第三个</div>
+    </div>
+    <hr/>
+    <p>弹性盒模型(旧)</p>
+    <div class="old">
+        <div class="firsto">第一个</div>
+        <div id="secondo">第二个</div>
+        <div id="thirdo">第三个</div>
+    </div>
+    <hr/>
+</body>
+
+</html>

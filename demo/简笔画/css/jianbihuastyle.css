@@ -1,0 +1,274 @@
+.body {
+    position: absolute;
+    width: 185px;
+    height: 283px;
+    border: 8px solid #222;
+    border-bottom-right-radius: 69px;
+    border-bottom-left-radius: 75px;
+    top: 58px;
+    left: 162px;
+    background-color: #F4d958;
+    border-top-left-radius: 83px;
+    border-top-right-radius: 84px 134px;
+}
+.jianbihua {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 510px;
+    height: 382px;
+    /*background-image: url(' xiaohuagnren.jpg');*/
+    background-position: center;
+}
+/*画板*/
+.panel {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.hand {
+    position: absolute;
+    top: 234px;
+    left: 189px;
+    width: 130px;
+    height: 53px;
+    border: 8px solid #222;
+    border-bottom-color: transparent;
+}
+
+.handsleft {
+    position: absolute;
+    top: 294px;
+    left: 168px;
+    width: 16px;
+    height: 5px;
+    border: 8px solid #222;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.handsright {
+    position: absolute;
+    top: 291px;
+    left: 327px;
+    width: 19px;
+    height: 3px;
+    -webkit-transform: rotatez(-13deg);
+    transform: rotatez(-13deg);
+    border: 8px solid #222;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+/*嘴样式*/
+.mouse {
+    width: 49px;
+    height: 13px;
+    position: absolute;
+    -webkit-transform: rotateZ(-14deg);
+    transform: rotateZ(-14deg);
+    top: 207px;
+    left: 251px;
+    border: 2px solid #222;
+    background-color: #FFF;
+    -webkit-animation: mousemove 5s ease infinite alternate;
+    animation: mousemove 5s ease infinite alternate;
+    border-bottom-right-radius: 62px 40px;
+    border-bottom-left-radius: 64px 38px;
+}
+/*眼镜样式*/
+.glass {
+    width: 180px;
+    height: 8px;
+    position: absolute;
+    top: 132px;
+    left: 163px;
+    border: 5px solid #222;
+    background-color: #000;
+}
+/*左眼*/
+.eyeleft {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    position: absolute;
+    top: 106px;
+    left: 187px;
+    background-color: #FFF;
+    border: 5px solid #222;
+}
+/*右眼*/
+.eyeright {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    position: absolute;
+    top: 106px;
+    left: 257px;
+    background-color: #FFF;
+    border: 5px solid #222;
+}
+/*左眼球黑色的部分*/
+.elf {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    top: 18px;
+    left: 22px;
+    background-color: #000;
+    border: 5px solid #222;
+}
+/*右眼球黑色的部分*/
+.erf {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    top: 17px;
+    left: 16px;
+    background-color: #000;
+    border: 5px solid #222;
+}
+/*左眼球白色的部分*/
+
+.els {
+    -webkit-animation: eyemove 5s ease infinite alternate;
+    animation: eyemove 5s ease infinite alternate;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+}
+/*右眼球白色的部分*/
+.ers {
+    -webkit-animation: eyemove 5s ease infinite alternate;
+    animation: eyemove 5s ease infinite alternate;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    background-color: #FFF;
+    border: 1px solid #FFF;
+}
+/*眼球动画*/
+@-webkit-keyframes eyemove {
+    from,
+    to {}
+    50% {
+        top: 0px;
+        left: 1px;
+        width: 14px;
+        height: 14px;
+    }
+    100% {
+        top: 2px;
+        left: -4px;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@keyframes eyemove {
+    from,
+    to {}
+    50% {
+        top: 0px;
+        left: 1px;
+        width: 14px;
+        height: 14px;
+    }
+    100% {
+        top: 2px;
+        left: -4px;
+        width: 10px;
+        height: 10px;
+    }
+}
+/*嘴部动画*/
+@-webkit-keyframes mousemove {
+    from,
+    to {}
+    50% {
+        border-radius: 8px;
+    }
+    100% {
+        border-bottom-right-radius: 62px 40px;
+        border-bottom-left-radius: 64px 38px;
+    }
+}
+
+@keyframes mousemove {
+    from,
+    to {}
+    50% {
+        border-radius: 8px;
+    }
+    100% {
+        border-bottom-right-radius: 62px 40px;
+        border-bottom-left-radius: 64px 38px;
+    }
+}
+/*头发样式*/
+.hairfirsrt {
+    /*animation: animation 5s ease infinite;*/
+    border-right: 4px solid black;
+    width: 102px;
+    height: 70px;
+    position: absolute;
+    left: 271px;
+    top: 48px;
+    -webkit-transform: rotateZ(-123deg);
+    transform: rotateZ(-123deg);
+    border-bottom-right-radius: 94px 73px;
+    /*transform-origin: 0px 0px;*/
+}
+
+.hairsecond {
+    /*animation: animation 5s ease infinite;*/
+    border-right: 4px solid black;
+    width: 44px;
+    height: 70px;
+    position: absolute;
+    left: 282px;
+    top: 27px;
+    -webkit-transform: rotateZ(-120deg);
+    transform: rotateZ(-120deg);
+    border-bottom-right-radius: 39px 87px;
+}
+
+.hairthird {
+    border-right: 4px solid black;
+    width: 44px;
+    height: 70px;
+    position: absolute;
+    left: 203px;
+    top: 28px;
+    -webkit-transform: rotateZ(-238deg) rotateY(-180deg);
+    transform: rotateZ(-238deg) rotateY(-180deg);
+    border-bottom-right-radius: 39px 87px;
+}
+
+.hairforth {
+    border-right: 4px solid black;
+    width: 102px;
+    height: 70px;
+    position: absolute;
+    left: 151px;
+    top: 47px;
+    -webkit-transform: rotateZ(-229deg) rotateY(-180deg);
+    transform: rotateZ(-229deg) rotateY(-180deg);
+    border-bottom-right-radius: 94px 73px;
+}
+
