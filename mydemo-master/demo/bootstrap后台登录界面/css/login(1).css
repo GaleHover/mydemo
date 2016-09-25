@@ -1,0 +1,50 @@
+* {
+    font-family: Arial, Verdana, Sans-serif;
+}
+
+.cn {
+    position: relative;
+    left: 0px;
+    margin: 0px;
+    background-color: #fff;
+    box-shadow: 0 0 10px #222;
+}
+
+#legend {
+    text-align: center;
+}
+label{
+    color:#5bc0de;
+
+}
+.control-group {
+    margin-bottom: 15px;
+}
+
+.btn-info.col-md-12 {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cn {
+    margin:100px 10px auto 10px ;
+    display: inline-block;
+    vertical-align: middle;
+}
+#legend{
+    margin-top:40px;
+}
+.lgg{
+    color:#5bc0de;
+
+}
+.yl{
+    padding:0;
+}
+.sl{
+    padding:0;
+}
+.clear{
+    clear:both;
+}

@@ -1,0 +1,35 @@
+.huanfu{
+    height:40px;
+    width:300px;
+    float:right;
+    margin-right:35px;
+
+}
+.huanfu span{
+    width:55px;
+    height:30px;
+    margin:2px;
+    display: block;
+    float:left;
+    cursor: pointer;
+}
+.huanfu #skin-green{
+    background-color: lightgreen;
+}
+.huanfu #skin-red{
+background-color: palevioletred;
+}
+.huanfu #skin-blue{
+background-color: deepskyblue;
+}
+.huanfu #skin-yellow{
+    background-color: yellow;
+}
+
+.hotsearchtop{
+    float:left;
+    margin-top:6px;
+}
+.hotsearch-box{
+    width:100%;
+}

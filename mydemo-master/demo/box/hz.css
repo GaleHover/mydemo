@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.xiezi {
+    width: 100px;
+    height: 100px;
+    background-color: #FF7F50;
+}
+
+.xiehe {
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: #00FFFF;
+    margin: 100px;
+    border: 5px solid red;
+}
+
+.xiezi1 {
+    width: 100px;
+    height: 100px;
+    background-color: #FF7F50;
+}
+
+.xiehe1 {
+    padding: 10px;
+    width: 130px;
+    height: 130px;
+    box-sizing: border-box;
+    background-color: #00FFFF;
+    margin: 100px;
+    border: 5px solid red;
+}
+
+.col {
+    -webkit-column-count: 3;
+    -webkit-column-rule-style: dotted;
+    -webkit-column-gap: 14px;
+}
+
+.center {
+    width: 300px;
+    height: 300px;
+    background-color: #FF7F50;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.new {
+    background-color:#E0FFFF;
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+.newt {
+    background-color:#E0FFFF;
+    display: -webkit-flex;
+}
+.old{
+    background-color:#E0FFFF;
+    display: -webkit-box;
+    height:600px;
+    -webkit-box-orient: vertical;
+}
+.first {
+    -webkit-flex: 1;
+    height: 100px;
+    -webkit-order: 2;
+    background-color: #FF7F50;
+}
+
+#second {
+    -webkit-flex: 1;
+    height: 100px;
+    -webkit-order: 3;
+    background-color: #90EE90;
+}
+
+#third {
+    -webkit-flex: 1;
+    height: 300px;
+    -webkit-order: 1;
+    background-color: #87CEFA;
+}
+.firsto {
+    -webkit-box-flex: 1;
+    height: 100px;
+    background-color: #FF7F50;
+}
+
+#secondo {
+    -webkit-box-flex: 1;
+    height: 100px;
+    background-color: #90EE90;
+}
+
+#thirdo {
+    -webkit-box-flex: 1;
+    height: 300px;
+    background-color: #87CEFA;
+}
+.fto {
+    -webkit-flex: 1;
+    height: 100px;
+    background-color: #FF7F50;
+}
+
+#sdo {
+    -webkit-flex: 1;
+    height: 100px;
+    background-color: #90EE90;
+}
+
+#tdo {
+    -webkit-flex: 1;
+    height: 300px;
+    background-color: #87CEFA;
+}
